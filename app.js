@@ -7,7 +7,6 @@ const dogListContainer = document.getElementById('dog-list-container');
 window.addEventListener('load', async() => {
     // fetch all dogs
     const dogsArray = await getDogs();
-    console.log(dogsArray);
 
     for (const dog of dogsArray) {
         const dogEl = renderDogCard(dog);
