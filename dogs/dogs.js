@@ -8,12 +8,9 @@ window.addEventListener('load', async() => {
     const id = new URLSearchParams(window.location.search).get('id');
     
     const dog = await getDog(id);
-    console.log(dog);
     
     const dogEl = renderDogDetail(dog);
 
     dogContainerEl.append(dogEl);
-
-
 });
 
